@@ -1,0 +1,60 @@
+/**index.wxss**/
+page{background: #F8F8F8}
+.fast{height: 400rpx;background: #41AEFF}
+.fast .fast-bj{width: 318rpx;height: 285rpx;top: 15rpx;left: 215rpx;}
+.fast .fast-count{font-size: 90rpx;top:105rpx;left:50%; transform: translateX(-50%);color: #fff;}
+.fast .fast-count text{font-size: 35rpx;}
+.fast .fast-detail{font-size: 29rpx;width: 290rpx;height: 55rpx;line-height: 55rpx;border-radius: 55rpx;top:255rpx;left:50%; margin-left: -150rpx;background: #fff;color: #41AEFF}
+
+.consult{width: 690rpx;height: 155rpx;border-radius: 150rpx;font-size: 26rpx;top:340rpx;left:50%; transform: translateX(-50%);color: #5e5e5e;z-index: 999;box-shadow: 0 0 10px #ccc;letter-spacing: -1rpx;}
+.consult .consult-box{width: 33%;display: inline-block;}
+.consult .consult-box image{width: 86rpx;height: 86rpx;margin: 15rpx 0 5rpx 0;}
+.consult .consult-box .button-share{width: 100%;height: 100%;display: inline-block;background: none;top: 0;left: 0;}
+
+.banner{padding: 120rpx 0 20rpx 0;margin-bottom: 15rpx;}
+.banner-box{height: 210rpx;}
+.banner .banner-img{width: 690rpx;height: 210rpx;border-radius: 10rpx;overflow: hidden;}
+
+.bigshot{padding-bottom: 20rpx;overflow: hidden;}
+.bigshot .subtitle{font-size: 30rpx;padding: 20rpx 0 10rpx 40rpx;color: #2a2a2a}
+.bigshot-recommend{width: 330rpx;height: 245rpx;margin: 10rpx 0 10rpx 30rpx;border: 1px solid #D8D8D8;border-radius: 12rpx;overflow: hidden}
+.bigshot-recommend .bigshot-img{width: 330rpx;height: 245rpx;}
+.bigshot-recommend .bigshot-name{font-size: 28rpx;width: 100%;height: 58rpx;line-height: 60rpx;text-indent: 15rpx;bottom: 0;left: 0;background: rgba(0, 0, 0, 0.5);color: #fff;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+
+
+/* 弹窗部分 */
+.popup{top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.6);z-index: 999;}
+/* 邀请好友弹窗 */
+.bonus-popup .bonus-box{top: 150rpx;left: 50%;height: 450rpx;width: 508rpx;margin-left: -254rpx;background: #fff;border-radius: 25rpx;}
+.bonus-popup .bonus-box .bonus-img{width: 508rpx;height: 283rpx;}
+.bonus-popup .bonus-box .bonus-share{width: 325rpx;height: 80rpx;line-height: 80rpx;border-radius: 80rpx;font-size: 30rpx;margin-top: 40rpx;background: #41AEFF;color: #fff;}
+.bonus-popup .close{top: 655rpx;left: 50%;margin-left: -29rpx;width: 60rpx;height: 58rpx;z-index: 99;}
+.bonus-popup .close .close-img{width: 55rpx;height: 55rpx;}
+
+/* 签到弹窗 */
+.signin-popup .signin-box{top: 150rpx;left: 50%;height: 450rpx;width: 465rpx;margin-left: -232rpx;background: #fff;border-radius: 30rpx;}
+.signin-popup .signin-box .signin-img{width: 465rpx;height: 212rpx;}
+.signin-popup .signin-box .signin-text1{font-size: 36rpx;margin:18rpx 0 40rpx 0;font-weight: 600;color: #41aeff;}
+.signin-popup .signin-box .signin-text2{font-size: 30rpx;margin:0 0 32rpx 0;color: #41aeff;}
+.signin-popup .signin-box .signin-text3{width: 325rpx;height: 80rpx;line-height: 80rpx;border-radius: 80rpx;background: #00A5FF;font-size: 30rpx;color: #fff;}
+.signin-popup .signin-box .signin-text4{color: #63CF9E;}
+.signin-popup .signin-box .signin-text5{background: #63CF9E;}
+
+
+.convert-popup{top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.3);z-index: 999;}
+.convert-popup-box{top: 200rpx;left: 50%;width: 300rpx;margin-left: -150rpx;}
+.convert-popup .close{top: 100rpx;left: 500rpx;width: 55rpx;height: 55rpx;line-height: 53rpx;border-radius: 50%;background: rgba(250, 250, 250, 0.6);z-index: 99;color: #fff;transform:rotate(45deg);font-size: 45rpx;}
+
+/* 动画css3 */
+.jackInTheBox {
+    animation-name: jackInTheBox;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes jackInTheBox{
+    from{transform:scale(1);}
+    50%{transform:scale(0.9);}
+    to{transform:scale(1);}
+}

@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/personal/personal",
+    "pages/index/pages/inform/inform",
+    "pages/personal/pages/account/account",
+    "pages/personal/pages/record/record",
+    "pages/personal/pages/drawmoney/drawmoney",
+    "pages/personal/pages/issue/issue",
+    "pages/personal/pages/binding/binding",
+    "pages/personal/pages/inform/inform"
+  ],
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "EN-TAN-MO",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#1C8ECD",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/footer1.png",
+        "selectedIconPath": "images/footer1-1.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "images/footer2.png",
+        "selectedIconPath": "images/footer2-1.png"
+      }
+    ]
+  }
+}

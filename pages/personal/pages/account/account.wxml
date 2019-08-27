@@ -1,0 +1,18 @@
+<!--account.wxml-->
+<view class="account bg-f">
+  <block wx:for="{{account_list}}" wx:key="time">
+    <view class="account-box p-r o-h">
+      <text class="account-title p-a">ETM增加{{item.etm}}个</text>
+      <text class="account-time p-a c-9">{{item.gmtCreate}}</text>
+      <text class="account-consumption p-a">-{{item.score}}分</text>
+      <text class="account-state p-a blue {{item.convertStatus == 1?'':'d-n'}}">审核中</text>
+      <text class="account-state p-a orange {{item.convertStatus == 2?'':'d-n'}}">兑换成功</text>
+      <text class="account-state p-a cyan {{item.convertStatus == 3?'':'d-n'}}">兑换失败</text>
+    </view>
+  </block>
+</view>
+<view class="over ta-c p-r {{over?'':'d-n'}}">已经到底啦</view>
+
+<view class="ta-c" wx:if="{{account_list.length == 0}}">
+  <image class="listNo" src="/images/listNo.png"></image>
+</view>

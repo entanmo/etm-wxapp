@@ -1,0 +1,20 @@
+<!--pages/login/login.wxml-->
+<view class="loading p-f ta-c w h bg-f {{loadingshow == 1?'':'d-n'}}">
+  <image class="loading-img" src="../../images/loading.png"></image>
+</view>
+
+<view class="{{loadingshow == 2?'':'d-n'}}">
+  <view wx:if="{{canIUse}}">
+      <view class='header'>
+          <image src='/images/logo.png'></image>
+      </view>
+      <view class='content'>
+          <view>申请获取以下权限</view>
+          <text>获得你的公开信息(昵称，头像等)</text>
+      </view> 
+      <button class='bottom' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+          授权登录
+      </button>
+  </view>
+  <view wx:else>请升级微信版本</view>
+</view>

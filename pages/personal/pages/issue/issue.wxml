@@ -1,0 +1,16 @@
+<!--issue.wxml-->
+<view class="issue">
+  <view class="issue-box">
+    <view class="issue-title">1.为什么签到积分未添加？</view>
+    <view class="issue-text">答：首先确保对小程序授权，进入后如果显示签到成功积分未添加情况，请退出小程序重新进入。若还是未有添加，请点击联系我们。</view>
+  </view>
+  <view class="issue-box">
+    <view class="issue-title">2.为什么邀请人积分未添加？</view>
+    <view class="issue-text">答：确认你邀请的人是否是新用户，新用户标准（首次授权小程序的用户视为新用户)。</view>
+  </view>
+  <view class="issue-box">
+    <view class="issue-title">3.为什么兑换后ETM钱包并未增加？</view>
+    <view class="issue-text">答：确认点击兑换时自己的钱包地址是正确的，且点击兑换在三个工作日后，最迟不超过十工作日。</view>
+  </view>
+</view>
+

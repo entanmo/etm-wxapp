@@ -1,0 +1,45 @@
+<!--binding.wxml-->
+<view class="binding {{binding == 1?'d-b':'d-n'}}">
+  <view class="isbinding {{siteJudge?'d-b':'d-n'}}">已绑定钱包地址：{{isbindingSite}}</view>
+  <form bindsubmit="formPurse" class="binding-form">
+    <view class="binding-box ta-l p-r c-b">
+      <image class="binding-img1 f-l" src="../../resources/pic/img8.png"></image>
+      <input class="binding-input f-l" name="site" value='{{site}}' placeholder="请添加钱包地址"/>
+    </view>
+    <view class="binding-hint d-ib">*请确认钱包地址是否正确</view>
+    <button formType="submit">立即绑定</button>
+  </form>
+  <view class="register d-ib p-r" bindtap='register'>没有ETM钱包？前往注册</view>
+</view>
+
+<view class="binding {{binding == 2?'d-b':'d-n'}}">
+  <view class="isbinding {{phoneJudge?'d-b':'d-n'}}">已绑定手机号：{{isbindingPhone}}</view>
+  <form bindsubmit="formPhone" class="binding-form">
+    <view class="binding-box ta-l p-r c-b">
+      <image class="binding-img2 f-l" src="../../resources/pic/img9.png"></image>
+      <input type="number" class="binding-input f-l" name="phone" value='{{phone}}' placeholder="请输入手机号"/>
+    </view>
+    <button formType="submit">立即绑定</button>
+  </form>
+</view>
+
+
+<!-- 绑定成功弹窗 -->
+<view class="succeed-popup popup p-f {{succeed?'d-b':'d-n'}}">
+  <view class="succeed-box p-a ta-c">
+    <view class="succeed-text">{{succeedText}}绑定成功</view>
+    <view class="confirm d-ib ta-c" bindtap='confirm'>确定</view>
+  </view>
+</view>
+
+<!-- 复制弹窗 -->
+<view class="register-popup popup p-f {{register?'d-b':'d-n'}}">
+  <view class="close d-ib p-a ta-c" bindtap='close'>
+    <image class="close-img" src="../../../../images/close.png"></image>
+  </view>
+  <view class="register-box p-a ta-c">
+    <view class="register-text1" selectable="true">{{website}}</view>
+    <view class="register-text2">点击复制前往浏览器打开注册钱包</view>
+    <view class="confirm d-ib ta-c" bindtap='copy'>点击复制</view>
+  </view>
+</view>

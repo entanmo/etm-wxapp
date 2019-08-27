@@ -1,0 +1,23 @@
+<!--account.wxml-->
+<view class="account bg-f">
+  <block wx:for="{{account_list}}" wx:key="index">
+    <view class="account-box p-r o-h {{item.score == 0?'d-n':''}}">
+      <text class="account-title p-a {{item.scoreTypeId == 'signin'?'':'d-n'}}">签到</text>
+      <text class="account-title p-a {{item.scoreTypeId == 'invite'?'':'d-n'}}">邀请好友</text>
+      <text class="account-title p-a {{item.scoreTypeId == 'fee'?'':'d-n'}}">积分兑换ETM手续费</text>
+      <text class="account-title p-a {{item.scoreTypeId == 'convert'?'':'d-n'}}">积分兑换ETM</text>
+      <text class="account-time p-a c-9" space="ensp">{{item.gmtCreate}}</text>
+      <view class="account-consumption d-ib p-a">
+        <text class="{{item.scoreType == 0?'':'d-n'}}">-</text>
+        <text class="{{item.scoreType == 1?'':'d-n'}}">+</text>
+        {{item.score}}分
+      </view>
+    </view>
+  </block>
+</view>
+
+<view class="over ta-c p-r {{over?'':'d-n'}}">已经到底啦</view>
+
+<view class="ta-c" wx:if="{{account_list.length == 0}}">
+  <image class="listNo" src="/images/listNo.png"></image>
+</view>

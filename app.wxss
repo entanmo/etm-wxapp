@@ -1,0 +1,39 @@
+/**app.wxss**/
+page{background: #fff;}
+button::after {border: none}
+.listNo{width: 306rpx;height: 251rpx;margin-top: 400rpx;}
+.over{font-size: 30rpx;color: #999;margin: 20rpx 0 30rpx 0}
+.over::after{content: '';display: block;height: 1rpx;width:80rpx;background: #ccc;position: absolute;top: 20rpx;left: 200rpx;}
+.over::before{content: '';display: block;height: 1rpx;width:80rpx;background: #ccc;position: absolute;top: 20rpx;left: 475rpx;}
+
+/*浮动*/
+.f-l{float:left}
+.f-r{float:right}
+.c-b::after{display: block;height: 0;clear: both;content: ''}
+/*定位*/
+.p-r{position:relative}
+.p-a{position:absolute}
+.p-f{position:fixed}
+/*块元素*/
+.d-b{display:block}
+.d-ib{display:inline-block}
+.d-i{display:inline}
+.d-n{display:none}
+/*对齐方式*/
+.ta-l{text-align:left}
+.ta-c{text-align:center}
+.ta-r{text-align:right}
+.va-m{vertical-align:middle}
+/*颜色*/
+.c-f{color: #fff;}
+.c-0{color: #000;}
+.c-9{color: #999;}
+.c-6{color: #666;}
+.c-3{color: #333;}
+
+/*其他*/
+.o-h{overflow:hidden}
+.bg-f{background: #fff}
+.w{width: 100%;}
+.w2{width: 50%;}
+.h{height: 100%;}

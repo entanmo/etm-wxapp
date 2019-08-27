@@ -1,0 +1,11 @@
+.account{padding: 0 24rpx;}
+.account-box{height: 144rpx;border-bottom: 1px solid #D8D8D8}
+.account-box:last-of-type{border: none;margin-bottom: 10rpx;}
+
+.account-consumption{font-size: 30rpx;top: 30rpx;right: 0;}
+.account-title{font-size: 30rpx;top: 30rpx;left: 0;width: 480rpx;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.account-time{font-size: 26rpx;top: 75rpx;left: 0;}
+.account-state{font-size: 26rpx;top: 75rpx;right: 0;}
+.blue{color: #41AEFF}
+.orange{color: #F3A334}
+.cyan{color: #49F0BE}

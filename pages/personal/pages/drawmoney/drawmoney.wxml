@@ -1,0 +1,65 @@
+<!--drawmoney.wxml-->
+<view class="drawmoney">
+  <form bindsubmit="formSubmit" class="drawmoney-form">
+    <view class="drawmoney-box drawmoney-box1 ta-l p-r c-b">
+      <view class="drawmoney-name d-ib f-l">钱包地址:</view>
+      <input type="text" class="drawmoney-input f-l" name="site" value='{{site}}' placeholder="输入钱包地址"/>
+      <view class="drawmoney-hint d-ib p-a">*请确认钱包地址无误</view>
+    </view>
+    <view class="drawmoney-box drawmoney-box2 ta-l p-r c-b">
+      <view class="drawmoney-name d-ib f-l">手机号码:</view>
+      <input type="number" class="drawmoney-input f-l" name="phone" value='{{phone}}' placeholder="输入手机号码"/>
+    </view>
+    <view class="drawmoney-box drawmoney-box3 ta-l p-r c-b">
+      <view class="drawmoney-name d-ib f-l">兑换数量:</view>
+      <input type="number" class="drawmoney-input f-l" name="money" value='{{money}}' placeholder="输入兑换数量"/>
+      <view class="drawmoney-convert c-b d-ib p-a">
+        <view class="convert-text d-ib c-9 f-l">可用{{amount}}积分，</view>
+        <view class="money-whole d-ib f-l" bindtap='moneyWhole'>全部兑换</view>
+      </view>
+    </view>
+    <button formType="submit">申请</button>
+  </form>
+  <view class="register d-ib p-r" data-informLink='{{informLink}}' bindtap='register'>没有ETM钱包？前往注册</view>
+
+  <view class="drawmoney-box drawmoney-box4 ta-l p-r c-b">
+    <view class="drawmoney-name d-ib f-l">兑换规则:</view>
+    <view class="drawmoney-rule d-ib f-l">
+      <view>1.小程序积分兑换ETM是{{scoreProportion}}：{{etmProportion}}兑换，兑换ETM币后扣除相应积分</view>
+      <view>2.每次兑换积分都将扣除{{typeScore}}积分的手续费。</view>
+    </view>
+  </view>
+</view>
+
+<!-- 注册ETM弹窗 -->
+<view class="popup p-f {{present?'d-b':'d-n'}}">
+  <view class="present-box p-a ta-c">
+    <image class="present-img" src="../../resources/pic/img1.png"></image>
+    <view class="present-text">恭喜你，提交成功！</view>
+    <view class="present-text">每月月初前三个工作日发放上月兑换奖励</view>
+    <view class="confirm d-ib ta-c" bindtap='confirm'>确定</view>
+  </view>
+</view>
+
+<!-- 提示弹窗 -->
+<view class="hint-popup popup p-f {{hint?'d-b':'d-n'}}">
+  <view class="present-box p-a ta-c">
+    <image class="present-img" src="/images/hint1.png"></image>
+    <view class="present-text">很遗憾，提交失败！</view>
+    <view class="present-text">请检查{{hintText}}</view>
+    <view class="confirm d-ib ta-c" bindtap='confirm'>确定</view>
+  </view>
+</view>
+
+
+<!-- 复制弹窗 -->
+<view class="register-popup popup p-f {{register?'d-b':'d-n'}}">
+  <view class="close d-ib p-a ta-c" bindtap='close'>
+    <image class="close-img" src="../../../../images/close.png"></image>
+  </view>
+  <view class="register-box p-a ta-c">
+    <view class="register-text1" selectable="true">{{website}}</view>
+    <view class="register-text2">点击复制前往浏览器打开注册钱包</view>
+    <view class="confirm d-ib ta-c" bindtap='copy'>点击复制</view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+.account{padding: 0 30rpx;}
+.account-box{height: 125rpx;border-bottom: 1px solid #F1F0EE}
+.account-box:last-of-type{border: none;margin-bottom: 10rpx;}
+
+.account-title{font-size: 30rpx;top: 30rpx;left: 0;width: 480rpx;color: #0a0a0a;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+.account-time{font-size: 24rpx;top: 75rpx;left: 0;color: #868686}
+.account-consumption{font-size: 30rpx;top: 50rpx;right: 0;color: #41aeff}
+

@@ -1,0 +1,31 @@
+.drawmoney{padding: 50rpx 0 30rpx 0}
+.drawmoney .drawmoney-box{height: 120rpx;margin:0 20rpx 0 60rpx;color: #5a5b5b;}
+.drawmoney .drawmoney-box1{height: 145rpx;}
+.drawmoney .drawmoney-box4{margin-top: 60rpx;color: #a3a3a4}
+
+.drawmoney .drawmoney-box .drawmoney-name{width: 125rpx;height: 70rpx;line-height: 70rpx;font-size: 28rpx;}
+.drawmoney .drawmoney-box .drawmoney-input{width: 500rpx;height: 70rpx;font-size: 28rpx;padding-left:10rpx;border: 1px solid #E5E5E5;border-radius: 10rpx;letter-spacing: 0;}
+.drawmoney .drawmoney-box .drawmoney-hint{font-size: 24rpx;top: 75rpx;left: 130rpx;color: #41aeff;}
+.drawmoney .drawmoney-box .drawmoney-convert{font-size: 25rpx;top: 75rpx;left: 130rpx;color: #41aeff;}
+.drawmoney .drawmoney-box .drawmoney-rule{width: 500rpx;line-height: 40rpx;font-size: 28rpx;padding: 15rpx 0 0 0}
+.drawmoney button{height: 76rpx;line-height: 76rpx;color: #fff;font-size: 30rpx;background: #41aeff;margin: 50rpx 60rpx 0 60rpx;border-radius:12rpx;letter-spacing: 3rpx;box-shadow: 0 3rpx 3rpx #41aeff;}
+.drawmoney .register{font-size: 30rpx;margin-top: 40rpx;letter-spacing: 1rpx;color: #41aeff;top: 0;left: 48%;transform: translateX(-50%)}
+
+/* 弹窗部分 */
+.popup{top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.6);z-index: 999;}
+.present-box{top: 150rpx;left: 50%;width: 540rpx;height: 486rpx;margin-left: -270rpx;background: #fff;border-radius: 30rpx;overflow: hidden;}
+.present-box .present-img{width: 120rpx;height: 120rpx;margin: 50rpx 0 50rpx 0}
+.present-box .present-text{font-size: 28rpx;line-height: 45rpx;color: #555454;}
+.present-box .confirm{width: 480rpx;height: 80rpx;line-height: 80rpx;border-radius: 80rpx;margin: 50rpx 0 0 0;font-size: 30rpx;color: #fffefe;background: #119EF3}
+/* 提示弹窗部分 */
+.hint-popup .present-box .confirm{background: #FF3D50}
+
+
+/* ETM复制弹窗 */
+.register-popup{top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.6);z-index: 999;}
+.register-box{top: 150rpx;left: 50%;width: 540rpx;height: 450rpx;margin-left: -270rpx;background: #fff;border-radius: 30rpx;overflow: hidden;}
+.register-box .register-text1{font-size: 34rpx;margin: 100rpx 0 30rpx 0;color: #555454;}
+.register-box .register-text2{font-size: 32rpx;margin: 30rpx 0 30rpx 0;color: #555454;}
+.register-box .confirm{width: 480rpx;height: 80rpx;line-height: 80rpx;border-radius: 80rpx;margin: 50rpx 0 0 0;font-size: 30rpx;color: #fffefe;background: #119EF3}
+.register-popup .close{top: 655rpx;left: 50%;margin-left: -29rpx;width: 58rpx;height: 58rpx;z-index: 99;}
+.register-popup .close .close-img{width: 55rpx;height: 55rpx;}

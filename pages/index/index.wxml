@@ -1,0 +1,80 @@
+<view class="index ta-c">
+  <view class="fast bg-f p-r">
+    <image class="fast-bj p-a" src="resources/pic/img1.png"></image>
+    <view class="fast-count p-a">{{userScore}}<text>积分</text></view>
+    <navigator class="fast-detail d-ib p-a" hover-class="none" url="../personal/pages/record/record">
+      <view class="fast-detail-text w p-a">点击查看积分明细</view>
+    </navigator>
+    <view class="consult bg-f p-a ta-c">
+      <view class="consult-box p-r" bindtap='conversion'>
+        <image class="fast-img" src="resources/pic/img2.png"></image>
+        <view class="consult-text">积分兑换</view>
+      </view>
+      <view class="consult-box p-r" bindtap='signin'>
+        <image class="fast-img" src="resources/pic/img3.png"></image>
+        <view class="consult-text">每日签到</view>
+      </view>
+      <view class="consult-box p-r" bindtap='bonus'>
+        <image class="fast-img" src="resources/pic/img4.png"></image>
+        <view class="consult-text">邀请好友</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="banner bg-f">
+    <swiper class="banner-box bg-f" autoplay="true" interval="3000" duration="500">
+      <block wx:for="{{advertis_list}}" wx:key='{{id}}'>
+        <swiper-item>
+          <image src="http://www.entanmojun.com:5050/pub-img/download-img?id={{item.imgId}}" class="banner-img" data-advertisLink='{{index}}' bindtap='advertis'/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  
+  <!-- 热门活动 -->
+  <view class="bigshot bg-f p-r ta-l">
+    <view class="subtitle">热门活动</view>
+    <block wx:for="{{bigshot_list}}" wx:key="id">
+      <view class="bigshot-recommend d-ib ta-c p-r" data-informLink='{{index}}' bindtap='chatBtnHandler'>
+        <image class="bigshot-img" src="http://www.entanmojun.com:5050/pub-img/download-img?id={{item.imgId}}"></image>
+        <view class="bigshot-name d-b p-a ta-l">{{item.activityName}}</view>
+      </view>
+    </block>
+    <view class="over ta-c p-r {{over?'':'d-n'}}">已经到底啦</view>
+  </view>
+</view>
+
+<!-- 邀请好友弹窗 -->
+<view class="bonus-popup popup p-f {{bonus?'d-b':'d-n'}}">
+  <view class="close d-ib p-a ta-c" bindtap='close'>
+    <image class="close-img" src="../../images/close.png"></image>
+  </view>
+  <view class="bonus-box p-a ta-c o-h">
+    <image class="bonus-img" src="resources/pic/img6.png"></image>
+    <button class="bonus-share" open-type='share'>分享给好友</button>
+  </view>
+</view>
+
+<!-- 签到弹窗 -->
+<view class="signin-popup popup p-f {{signin?'d-b':'d-n'}}">
+  <view class="signin-box p-a ta-c o-h">
+    <image class="signin-img" src="resources/pic/img7.png"></image>
+    <view class="signin-text1">签到成功，获得1积分</view>
+    <view class="signin-text3 d-ib" bindtap='close'>确定</view>
+  </view>
+</view>
+<view class="signin-popup popup p-f {{signinNo?'d-b':'d-n'}}">
+  <view class="signin-box p-a ta-c o-h">
+    <image class="signin-img" src="resources/pic/img8.png"></image>
+    <view class="signin-text1 signin-text4">你今天已经签到了</view>
+    <view class="signin-text3 signin-text5 d-ib" bindtap='close'>确定</view>
+  </view>
+</view>
+
+
+<!-- 积分兑换ETM规则弹窗 -->
+<view class="convert-popup p-f {{convert?'d-b':'d-n'}}">
+  <view class="close d-ib p-a ta-c" bindtap='close'>+</view>
+  <view class="convert-popup-box d-ib p-a c-f">积分兑换ETM规则弹窗</view>
+</view>
+

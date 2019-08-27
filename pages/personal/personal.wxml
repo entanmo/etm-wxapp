@@ -1,0 +1,46 @@
+<!--personal.wxml-->
+<view class="personal">
+  <view class="information p-r">
+    <!-- 如果展示用户头像昵称，使用 <open-data /> 组件 -->
+    <view class="information-portrait p-a">
+      <open-data type="userAvatarUrl" class="portrait"></open-data>
+    </view>
+    <view class="information-name p-a">
+      昵称:<open-data type="userNickName"></open-data>
+    </view>
+    <view class="information-text1 p-a d-ib c-f">积分数量:{{userScore}}</view>
+    <view class="information-text2 p-a d-ib c-f">已兑换ETM数量:{{totalConvertEtm}}</view>
+  </view>
+  
+  <view class="personal-list bg-f">
+    <navigator class="list-box bg-f p-r" url="pages/drawmoney/drawmoney">
+      <image class="personal-icon va-m" src="resources/pic/img2.png"></image>
+      <text>积分兑换</text>
+    </navigator>
+    <navigator class="list-box bg-f p-r" url="pages/account/account">
+      <image class="personal-icon va-m" src="resources/pic/img3.png"></image>
+      <text>积分兑换记录</text>
+    </navigator>
+  </view>
+  <view class="personal-list bg-f">
+    <navigator class="list-box bg-f p-r" url="pages/binding/binding?binding=1">
+      <image class="personal-icon va-m" src="resources/pic/img4.png"></image>
+      <text>钱包绑定</text>
+    </navigator>
+    <navigator class="list-box bg-f p-r" url="pages/binding/binding?binding=2">
+      <image class="personal-icon va-m" src="resources/pic/img5.png"></image>
+      <text>手机号绑定</text>
+    </navigator>
+  </view>
+  <view class="personal-list bg-f">
+    <navigator class="list-box bg-f p-r d-b" url="pages/issue/issue">
+      <image class="personal-icon va-m" src="resources/pic/img6.png"></image>
+      <text>常见问题</text>
+    </navigator>
+    <view class="list-box list-box2 bg-f p-r">
+      <button open-type="contact" class="default p-a d-b" />
+      <image class="personal-icon va-m" src="resources/pic/img7.png"></image>
+      <text>联系我们</text>
+    </view>
+  </view>
+</view>
